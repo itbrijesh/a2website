@@ -9,19 +9,22 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var NavbarComponent = (function () {
-    function NavbarComponent() {
-        this.branding = 'MyWebsite';
+var JumbtronComponent = (function () {
+    function JumbtronComponent() {
+        this.jbtHeading = 'Hello World';
+        this.jbtText = 'This is a simple hero unit, a simple jumbtron-style component for calling extra attention to featured content or information.';
+        this.jbtBtnText = 'Read More';
+        this.jbtBtnUrl = '/about';
     }
-    NavbarComponent = __decorate([
+    JumbtronComponent = __decorate([
         core_1.Component({
             moduleId: module.id,
-            selector: 'navbar',
-            templateUrl: 'navbar.component.html'
+            selector: 'jumbtron',
+            templateUrl: 'jumbtron.component.html'
         }), 
         __metadata('design:paramtypes', [])
-    ], NavbarComponent);
-    return NavbarComponent;
+    ], JumbtronComponent);
+    return JumbtronComponent;
 }());
-exports.NavbarComponent = NavbarComponent;
-//# sourceMappingURL=navbar.component.js.map
+exports.JumbtronComponent = JumbtronComponent;
+//# sourceMappingURL=jumbtron.component.js.map

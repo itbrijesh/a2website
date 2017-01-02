@@ -13,17 +13,21 @@ var platform_browser_1 = require('@angular/platform-browser');
 var forms_1 = require('@angular/forms');
 var http_1 = require('@angular/http');
 var app_component_1 = require('./app.component');
+var navbar_component_1 = require('./components/navbar/navbar.component');
+var jumbtron_component_1 = require('./components/jumbtron/jumbtron.component');
+var home_component_1 = require('./components/pages/home.component');
+var about_component_1 = require('./components/pages/about.component');
+var app_routing_1 = require('./app.routing');
 var AppModule = (function () {
     function AppModule() {
     }
     AppModule = __decorate([
         core_1.NgModule({
-            // photoRouting should come before main/root routing.
             imports: [platform_browser_1.BrowserModule, forms_1.FormsModule, forms_1.ReactiveFormsModule, http_1.HttpModule,
-            ],
-            declarations: [app_component_1.AppComponent],
+                app_routing_1.routing],
+            declarations: [app_component_1.AppComponent, navbar_component_1.NavbarComponent, jumbtron_component_1.JumbtronComponent, home_component_1.HomeComponent, about_component_1.AboutComponent],
             providers: [],
-            exports: [],
+            exports: [navbar_component_1.NavbarComponent, jumbtron_component_1.JumbtronComponent],
             schemas: [],
             bootstrap: [app_component_1.AppComponent]
         }), 

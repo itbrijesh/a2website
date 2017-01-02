@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
 
 @Component({
-    //moduleId: module.id,
+    moduleId: module.id,
     selector: 'navbar',
-    template:'Pramukh Swami'
-    //templateUrl: 'navbar.component.html'
+    templateUrl: 'navbar.component.html'
 })
 export class NavbarComponent {
-    
+    branding = 'MyWebsite';
 }

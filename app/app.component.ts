@@ -2,7 +2,11 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'my-app',
-  template: ` Main app
+  template: ` <navbar></navbar>
+              <jumbtron></jumbtron>
+              <div class='container'>
+                  <router-outlet></router-outlet>                  
+              </div>
              
   `,
 })

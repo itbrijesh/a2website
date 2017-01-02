@@ -4,18 +4,22 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { HttpModule } from '@angular/http';
 
-import { AppComponent }  from './app.component';
-import { NavbarComponent } from './components/navbar/navbar.component';
+import { AppComponent }  from     './app.component';
+import { NavbarComponent } from   './components/navbar/navbar.component';
+import { JumbtronComponent } from './components/jumbtron/jumbtron.component';
+import { HomeComponent } from './components/pages/home.component';
+import { AboutComponent } from './components/pages/about.component';
+
+import { routing } from './app.routing';
 
 import * as _ from 'underscore';
 
 @NgModule({
-  // photoRouting should come before main/root routing.
   imports:      [ BrowserModule, FormsModule, ReactiveFormsModule, HttpModule, 
-                  ], 
-  declarations: [ AppComponent ],
+                  routing ], 
+  declarations: [ AppComponent, NavbarComponent, JumbtronComponent, HomeComponent, AboutComponent ],
   providers:    [  ],
-  exports : [  ],
+  exports : [ NavbarComponent, JumbtronComponent ],
   schemas: [ ],
   bootstrap:    [ AppComponent ]
 })
